@@ -2,7 +2,6 @@
 
 # Problem solving with Functions 
 
-Duration: "3:00 - 4:00" <br>
 Type: Homework<br>
 Class: SEI<br>
 Creator: GA Instructional Team<br>
@@ -11,11 +10,15 @@ Topics: Problem solving with functions<br>
 ---
 
 
-## Setup
+## Instructions
 
-Fork/clone this repo as directed by your instructor. Inside the repo, create the usual folder structure. Write your answers in `app.js`.
+1. Fork this repo.
+2. Add an a file for `app.js`
+3. Write your answers in `app.js`.
+4. Follow the instructions below. 
+5. Once completed, send the repository link to the *homework* thread.
 
-
+**Hint:** Remember your git skills for the commit history! 
 
 
 ## 1. Verbal questions
@@ -32,54 +35,50 @@ The commit message should read: <br>
 "Commit 1 - Verbal questions".
 <hr>
 
-## 2. Palindrome again.
-Write a function `checkPalindrome` that accepts a single argument, a string. Yes, you've done it before, but do it again. Later in this assignment we're gonna beef up our palindrome function some. See if you can do it without looking back at your previous answer. The function should return true if the string is a palindrome, false if not. Make sure your function will give the correct answer for words with **capital letters**.
+## 2. ## Calculate the Cube
+Write a function `calculateCube` that takes a single number and prints the volume of a cube made from that number.
 
 ```javascript
-console.log(checkPalindrome("Radar"));
- => true
+console.log(calculateCube(5));
 ```
+
+> => 125
+
+<hr>
+&#x1F534; **Commit your work.** <br>
+The commit message should read: <br>
+"Commit 2 - Cube Calculation".
+<hr>
+
+## 3. Is a Vowel?
+Write a function `isAVowel` that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case.
 
 ```javascript
-console.log(checkPalindrome("Borscht"));
-=> false
+console.log(isAVowel("a"));
 ```
+
+> => true
 
 <hr>
 &#x1F534; **Commit your work.** <br>
 The commit message should read: <br>
-"Commit 2 - Palindrome".
+"Commit 3 - Is a Vowel".
 <hr>
 
-## 3. Digit Sum
-Write a function `sumDigits` that accepts a number and returns the sum of its digits.
-```js
-console.log(sumDigits(42));
-=> 6;
+## 4. Get Two Lengths
+
+Write a function `getTwoLengths` that accepts two parameters (strings). The function should return an _array_ of numbers where each number is the length of the corresponding string.
+
+```javascript
+console.log(getTwoLengths("Hank", "Hippopopalous"));
 ```
+
+> => [4, 13]
 
 <hr>
 &#x1F534; **Commit your work.** <br>
 The commit message should read: <br>
-"Commit 3 - Digit Sum".
-<hr>
-
-## 4. Pythagoras
-Write a function `calculateSide` that takes two arguments: `sideA` and `sideB`, and returns the solution for sideC using the Pythagorean theorem.
-
-_hint:_ discover the Pythagorean Theorem on a website called google.com
-
-_hint:_ checkout the [Math methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) in javascript
-
-**_restriction_**: for this problem, do NOT use `Math.hypot()` (but for the rest of time, once you've done this problem feel free)
-```js
-console.log(calculateSide(8, 6));
-=> 10
-```
-<hr>
-&#x1F534; **Commit your work.** <br>
-The commit message should read: <br>
-"Commit 4 - Pythagoras".
+"Commit 4 - Two Lengths".
 <hr>
 
 ## 5. Sum Array
@@ -96,6 +95,7 @@ console.log(sumArray([1, 2, 3, 4, 5, 6]));
 The commit message should read: <br>
 "Commit 5 - Sum Array".
 <hr>
+
 
 ## 6. Prime Numbers
 A Prime number is a number that is not evenly divisible by another number except 1 and itself. If you want to read more deeply about it, [go here](https://en.wikipedia.org/wiki/Prime_number).
@@ -116,47 +116,70 @@ The commit message should read: <br>
 "Commit 6 - Prime Numbers".
 <hr>
 
+## 7. Print Longest Word
 
-## CSS
-Watch the following three videos on CSS:
+Write a function `printLongestWord` that accepts a single argument, an **array of strings**. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
 
-- [First CSS video - 5 minutes](https://www.youtube.com/watch?v=xWiT2TWCFjc&index=3&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
-- [Second CSS video - 11 minutes](https://www.youtube.com/watch?v=UMMHsQPmfug&index=4&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
-- [Third CSS video - 17 minutes](https://www.youtube.com/watch?v=g0Aq2kP5-CY&index=5&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
-
-You will need to have watched these videos for tomorrow's lab.
-
-# Hungry for more?
-
-1. Complete the afternoon lab. 
-
-2. Write a function `insertDash` that accepts a number as a parameter and returns a string with a dash inserted between any consecutive **odd numbers**. There should not be a dash at the end, it goes only between numbers.
 ```javascript
-console.log(insertDash(454793));
-
-=> 4547-9-3
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 ```
 
-    Commit.
+> => "Peanutbutter"
 
-3. Write a function `reverseString` that takes a string as a parameter and returns that string with the letters reversed **without using `.split()`, `.reverse()`, or `.join()`**.
 
-    Commit.
+<hr>
+&#x1F534; **Commit your work.** <br>
+The commit message should read: <br>
+"Commit 7 - Longest Word".
+<hr>
 
-4. Make your palindrome function from problem two above work regardless of spacing (or capitalization). So, for example, "Sit on a potato pan Otis" or "Bird rib" would pass the test.
+---
 
-    Commit.
+### Bonus
 
-5. Make your palindrome function work even if the string contains punctuation.  So: "Sit on a potato pan, Otis!!!" or "A man, a plan, a canal: Panama." or "Cigar? Toss it in a can! It is so tragic." would pass the test.
+## Project Euler Problem
+[Project Euler problem #2](https://projecteuler.net/problem=2)
 
-    Commit.
+* Write a function that takes a parameter, a number. The function should print the Fibonacci sequence up to that number.
 
-6. Make a "word palindrome" function that returns true if the words in a phrase are the same backwards and forwards.  It should not care about spacing, capitalization, or punctuation.  For example the following string would pass the test: 
+* Adjust the function to push the **even numbered** values into an array.
 
-    "Son, I am able," she said. "Though you scare me, watch!" said I, "Beloved," I said, "watch me scare you!" Though, said she: "able am I, son."
+* Adjust the function to return the summed value of the array.
 
-    Commit.
+* Find the sum of the even numbered values that do not exceed four million.
 
-7. You still want more?!?! Do you even sleep? Create an account on [Project euler](https://projecteuler.net/archives) and keep working on those problems.
 
+## A Needle in the Haystack
+
+[From Codewars](https://www.codewars.com/kata/56676e8fabd2d1ff3000000c)
+
+[Join CodeWars](www.codewars.com/r/bEqEeQ)
+
+Can you find the needle in the haystack?
+
+Write a function `findNeedle()` that takes an array full of junk but contains one `"needle"`
+
+After your function finds the needle it should return a message (as a string) that says:
+
+`"found the needle at postition"` plus the index it found the needle so:
+
+`find_needle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])`
+
+Should return:
+
+`"found the needle at position 5"`
+
+## Sum the Positive
+
+[From Codewars](https://www.codewars.com/kata/5715eaedb436cf5606000381)
+
+[Join CodeWars](www.codewars.com/r/bEqEeQ)
+
+Given an array, return the sum of only the positive numbers
+
+`[1, -4, 7, 12] => 1 + 7 + 12 = 20`
+
+# Keep going!
+
+[Join CodeWars](www.codewars.com/r/bEqEeQ) and find your own challenges to solve! Find a great one? Share it in slack!
 
