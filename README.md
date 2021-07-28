@@ -35,7 +35,7 @@ The commit message should read: <br>
 "Commit 1 - Verbal questions".
 <hr>
 
-## 2. ## Calculate the Cube
+## 2. Calculate the Cube
 Write a function `calculateCube` that takes a single number and prints the volume of a cube made from that number.
 
 ```javascript
