@@ -151,9 +151,7 @@ The commit message should read: <br>
 
 ## A Needle in the Haystack
 
-[From Codewars](https://www.codewars.com/kata/56676e8fabd2d1ff3000000c)
-
-[Join CodeWars](www.codewars.com/r/bEqEeQ)
+[From Codewars](https://www.codewars.com/kata/56676e8fabd2d1ff3000000c) [Join CodeWars](www.codewars.com/r/bEqEeQ)
 
 Can you find the needle in the haystack?
 
@@ -172,8 +170,6 @@ Should return:
 ## Sum the Positive
 
 [From Codewars](https://www.codewars.com/kata/5715eaedb436cf5606000381)
-
-[Join CodeWars](www.codewars.com/r/bEqEeQ)
 
 Given an array, return the sum of only the positive numbers
 
