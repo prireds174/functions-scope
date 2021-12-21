@@ -51,8 +51,8 @@ describe("getTwoLengths() returns an array of numbers where each number is the l
         expect(getTwoLengths("hi", "hey")).toBeDefined();
     });
 
-    it('"Hank", "Hippopopalous" should return [4, 13]', () => {
-        expect(getTwoLengths("Hank", "Hippopopalous")).toEqual([4, 13]);
+    it('"hungry", "hippopotamus" should return [4, 13]', () => {
+        expect(getTwoLengths("hungry", "hippopotamus")).toEqual([6, 12]);
     });
 
     it('["Tiger", "Supercalifragilisticexpialidocious"] should return [5, 34]', () => {
