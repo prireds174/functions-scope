@@ -13,10 +13,9 @@ Topics: Problem solving with functions<br>
 ## Instructions
 
 1. Fork this repo.
-2. Add an a file for `app.js`
-3. Write your answers in `app.js`.
-4. Follow the instructions below. 
-5. Once completed, send the repository link to the *homework* thread.
+2. Write your answers in `app.js`.
+3. Follow the instructions below. 
+4. Once completed, send the repository link to the *homework* thread.
 
 **Hint:** Remember your git skills for the commit history! 
 
@@ -179,3 +178,8 @@ Given an array, return the sum of only the positive numbers
 
 [Join CodeWars](www.codewars.com/r/bEqEeQ) and find your own challenges to solve! Find a great one? Share it in slack!
 
+## Testing your work!
+
+1. From inside this directory, run `npm install` in your terminal. This will download the testing dependencies for jest. Or you could follow these instructions to [install jest](https://jestjs.io/docs/getting-started).
+2. Once you're ready to test your code: in the current directory, run `npm run test` in the terminal. Check the output for errors.
+3. If there are any errors, make the adjustments where needed then run again.
