@@ -1,5 +1,3 @@
-// Currently no test for eulerFibo due to multiple adjustments. Leave commented out for now.
-
 const {
     calculateCube,
     isAVowel,
@@ -8,11 +6,9 @@ const {
     checkPrime,
     printPrimes,
     printLongestWord,
-
-    // uncomment following functions for bonus problems
-    //   // eulerFibo, 
-    // findNeedle,
-    // sumPositive
+    eulerFibo, 
+    findNeedle,
+    sumPositive
 } = require("./app");
 
 // 2. calculateCube
@@ -138,7 +134,24 @@ describe("printLongestWord() returns the longest word in an array", () => {
 });
 
 // BONUS!
-// Skipping Project Euler question due to multiple adjustments.
+// 8. eulerFibo
+describe("eulerFibo() takes in a number and finds the sum of even numbers in a fibonacci sequence up to that number", () => {
+    it("eulerFibo is defined", () => {
+        expect(eulerFibo(10)).toBeDefined();
+    });
+
+    it("even numbers up to 10 are [2, 8] and should return the sum of 10", () => {
+        expect(eulerFibo(10)).toEqual(10);
+    });
+
+    it("even numbers up to 100 are [2, 8, 34] and should return the sum of 44", () => {
+        expect(eulerFibo(100)).toEqual(44);
+    });
+
+    it("even numbers up to 1000 are [2, 8, 34, 144, 610] and should return the sum of 798", () => {
+        expect(eulerFibo(1000)).toEqual(798);
+    });
+});
 
 // 9. findNeedle
 describe("findNeedle() returns 'Found the needle at position ${index}'", () => {

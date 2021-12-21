@@ -64,9 +64,7 @@ module.exports = {
     checkPrime,
     printPrimes,
     printLongestWord,
-
-    // uncomment below for bonus function tests.
-    // // eulerFibo,
-    // findNeedle,
-    // sumPositive
+    eulerFibo,
+    findNeedle,
+    sumPositive
 };
